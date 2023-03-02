@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="./css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+        <script src="./js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script> -->
+        
+        <title>Just Play</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        
+        <!-- <link href="./css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+        <script src="./js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script> -->
+        
+        <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+        
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+    <!-- Game data -->
+    <!-- <script type="./game/data.json"></script> -->
+<style>
+    #nav{
+        background-color: #E42B2B;
+        height: 119px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    #top > ul{
+        padding-right: 10px;
+        float: right;
+        margin-bottom: 0px;
+    }
+    #top > ul > li, #top > ul > li > a{
+        list-style: none;
+        display: inline-block;
+        margin: 6px 6px 0px;
+        color: floralwhite;
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+    }
+    #bottom{
+        margin-left: 30px;
+        display: flex;
+    }
+    #title > a{
+        /* font-family */
+        font-size: 37px;
+        margin-top: 20px;
+        font-weight: bold;
+        color: papayawhip;
+    }
+    #search-bar{
+        font-size: 15px;
+        width: 750px;
+        height: 33px;
+        margin: 20px auto 10px;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        padding: 0px 30px;
+
+        background-image: url(./img/icons8-search.svg);
+        background-position: auto 15px;
+        background-repeat: no-repeat;
+    }
+    #lists{
+        list-style-type: none;
+        width: 782px;
+        z-index: 1;
+        margin-left: 399px;
+        margin-top: -9px;
+        display: none;
+        /* padding: 0;
+        margin: 0; */
+    }
+    #lists li a {
+        border: 1px solid #ddd; /* Add a border to all links */
+        margin-top: -1px; /* Prevent double borders */
+        background-color: #f6f6f6; /* Grey background color */
+        padding: 10px; /* Add some padding */
+        font-size: 15px; /* Increase the font-size */
+        color: black; /* Add a black text color */
+        display: block; /* Make it into a block element to fill the whole list */
+    }
+    #lists li a:hover{
+        background-color: #eee; /* Add a hover effect to all links */
+    }
+/* chunyi edit */
+    #dashboard {
+		width: 130px;
+		background-color: #E42B2B;
+		padding: 20px 20px 0 10px;
+		position: absolute;
+        top: 119px;
+		left: -92px;
+		z-index: 100;
+	}
+	#dashboard ul {
+		margin-bottom: 80px;
+		color: rgb(255,255,255);
+		padding: 0px;
+	}
+
+    #onlyCarousel {  /*edit*/
+        padding-left: 150px;
+		width: 870px;
+		height: 432px;
+	}
+    #onlyCarousel .carousel-inner{
+        height: 432px;
+    }
+    #onlyCarousel .carousel-inner img{  /*edit*/
+        width: 100%;
+        height: 432px;      
+		padding-top: 30px;   
+	} 
+    #banner img{
+        width: 450px;
+        height: 400px;      
+        position: relative;
+        bottom: 400px;
+        right: 100px;
+        float: right;
+        object-fit: contain;
+    }
+    .item,.carousel-caption, .carousel-margin {
+        width: 100%;
+        height: 300px;
+    }
+    .carousel-caption, .carousel-margin {
+        left: 0;
+        top: 0;
+        padding: 0;
+    }
+    #myCarousel {
+        top: 20px;
+        width: 1190px;
+        left: 150px;
+    }  
+    .carousel-margin{
+        display: flex;
+        justify-content: space-around;
+    }
+    #myCarousel .recommend {
+        height: 20px;
+    }
+    #myCarousel span{
+        font-size: 32px;
+        color: #808080;
+        margin: 15px;
+    }
+    #myCarousel .carousel-margin {
+        width: 1190px;
+        bottom: auto;    
+    }
+    #myCarousel .carousel-inner {
+        width: 1190px;
+        bottom: 350px;    
+    }
+    #myCarousel .carousel-margin  img{
+        /* margin: 5px; */
+        /* border: 1px solid #cdcdcd; */
+    }
+    #myCarousel .carousel-margin  img{
+        margin: 5px;
+        /* border: 1px solid #cdcdcd; */
+    }
+    #myCarousel .carousel-control {
+        height: 250px;
+
+    }
+    #select{
+        margin-top: 30px;
+        width: 100%;
+        height: 400px;
+        background-color: antiquewhite;
+    }
+    #modal_pic{
+        width: 100%;
+    }
+/*------------*/
+</style>
+<script>
+    $("#title")
+        .mouseenter(function(){
+            $(this).css("text-shadow", "0 0 5px #555");
+        })
+        .mouseleave(function(){
+            $(this).css("text-shadow", "");
+        });
+
+// chunyi edit
+    $(document).ready(function() {
+        // Include navigation bar
+        $(".navigation").load("./nav.html");
+
+        $('#dashboard').hover(function(){
+            $(this).stop().animate({
+                left:'0px',
+                backgroundColor:'#E42B2B'
+                //'background-color':
+            }, 1000,);
+        }, function(){
+            $(this).stop().animate({
+                left:'-92px',
+                backgroundColor:'#E42B2B'
+                //'background-color':
+            }, 1000, function(){
+                $('.main').effect('slide',{ direction: 'up' }, 800)	//文字滑出
+            });
+
+        });
+
+        var gameData;
+        // Get game data
+        $.getJSON("./game/data.json", function(data){
+           gameData = data;
+        });
+        $("#select, #rePlay").click(function(){
+            $(".modal").show();
+            for(var i = 0; i < 10; i++){
+                //Get random object key name
+                var select_cate = Object.keys(gameData)[Math.floor(Math.random()*10%Object.keys(gameData).length)];
+                //Get random array index
+                var select_game = Math.floor(Math.random()*10%gameData[select_cate].length);
+                $("#modalLabel").text(gameData[select_cate][select_game].name);
+                $("#modal_pic").attr("src", "./game/img/" + gameData[select_cate][select_game].img);
+                $(".modal-body a").attr("href", './introduce.html' + 
+                '?category=' + select_cate + '&which=' + select_game);
+            }
+        });
+    });
+//-----------
+    
+    
+</script>
+<div class="navigation"></div>
+<div id="container">
+<!--chunyi edit-->
+    <div id="dashboard">
+        <a href="./gameList.html?category=Action">  <!--動作遊戲網址-->
+            <ul>
+                <li>動作</li>
+            </ul>
+        </a>
+        <a href="./gameList.html?category=Adventure"> <!--冒險遊戲網址-->
+            <ul>
+                <li>冒險</li>
+            </ul>
+        </a>
+        <a href="./gameList.html?category=Fir_Per"> <!--第一人稱遊戲網址-->
+            <ul>
+                <li>第一人稱</li>
+            </ul>
+        </a>
+        <a href="./gameList.html?category=Music"> <!--音樂遊戲網址-->
+            <ul>
+                <li>音樂</li>
+            </ul>
+        </a>
+        <a href="./gameList.html?category=Racing"> <!--賽車遊戲網址-->
+            <ul>
+                <li>賽車</li>
+            </ul>
+        </a>
+        <a href="./gameList.html?category=Sports"> <!--運動遊戲網址-->
+            <ul>
+                <li>運動</li>
+            </ul>
+        </a>
+    </div>
+
+    <!-- 廣告區塊-->
+    <div id="onlyCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="game/img/Fir_Per/garden.jpg" style="display: inline-block;" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="game/img/racing/disney.jpg" style="display: inline-block;" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="game/img/sports/gg.jpg" style="display: inline-block;" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal" id="select">
+                <h1>隨機推薦</h1><br><p style="font-size: 20px">點選幻燈片，隨機推薦一款遊戲。</p>
+            </button>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#onlyCarousel" style="left: 140px;" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#onlyCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- 活動區塊 -->
+    <div id="banner" class="banner-wrapper">
+        <a class="up-banner" href="./celebrating.html"> <!-- 放活動連結 -->
+            <div class="up-banner-image">
+                <img src="./game/img/activity/A1.jpg" alt="">
+            </div>
+        </a>
+    </div>
+
+    <!-- 推薦遊戲區塊 -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="recommend" style="background-color: #dcdcdc; height: 300px;" >
+            <span id="recommend-text">推薦遊戲</span>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-margin">
+                        <img style="display: inline-block;" width="300" height="200" src="./game/img/music/burn3.jpg" alt="">
+                        <img style="display: inline-block;" width="300" height="200" src="./game/img/adventure/hunter.jpg" alt="">
+                        <img style="display: inline-block;" width="300" height="200" src="./game/img/racing/disney4.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-margin">
+                        <img style="display: inline-block;" width="300" height="200" src="./game/img/Fir_Per/apex4.jpg" alt="">
+                        <img style="display: inline-block;" width="300" height="200" src="./game/img/racing/wrc1.jpg" alt="">
+                        <img style="display: inline-block;" width="300" height="200" src="./game/img/sports/sport1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-margin">
+                        <img style="display: inline-block;" width="300" height="200" src="./game/img/adventure/little.jpg" alt="">
+                        <img style="display: inline-block;" width="300" height="200" src="./game/img/adventure/little4.jpg" alt="">
+                        <img style="display: inline-block;" width="300" height="200" src="./game/img/sports/mlb.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" style="left: 5px;" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" >
+        <div class="modal-dialog">
+            <div class="modal-content border-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">隨機選擇器</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <a href=""><img src="" alt="" id="modal_pic"></a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="rePlay">重新選則</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#myCarousel').carousel()
+        });
+        $(document).ready(function(){
+            $('#omlyCarousel').carousel()
+        });
+    </script>
+    <!--------------->
+</div>

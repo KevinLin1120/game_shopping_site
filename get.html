@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/get.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+<script>
+    $().ready(function () {
+        // Include navigation bar
+        $(".navigation").load("./nav.html");
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const Cardnum = urlParams.get("Cardnum"); //Get url query category
+        const Cardown = urlParams.get("Cardown"); //Get url query category
+        const yy = urlParams.get("yy"); //Get url query category
+        const mm = urlParams.get("mm"); //Get url query category
+        const Cardcvv = urlParams.get("Cardcvv"); //Get url query category
+
+
+        const category = urlParams.get("category"); //Get url query category
+        const which = urlParams.get("which"); //Get url query category
+        var newi = '<p style="border: 1px solid #000000;background-color:#ffffff; width:500px; height:30px;font-size: large;position:absolute;left: 486px;top:200px;">' + Cardnum + '</p>';
+        var newD = '<p style="border: 1px solid #000000;background-color:#ffffff; width:500px; height:30px;font-size: large;position:absolute;left: 486px;top:250px;">' + Cardown + '</p>';
+        var newa = '<p style="border: 1px solid #000000;background-color:#ffffff; width:500px; height:30px;font-size: large;position:absolute;left: 486px;top:300px;">' + yy + '</p>';
+        var newb = '<p style="border: 1px solid #000000;background-color:#ffffff; width:500px; height:30px;font-size: large;position:absolute;left: 486px;top:350px;">' + mm + '</p>';
+        var newc = '<p style="border: 1px solid #000000;background-color:#ffffff; width:500px; height:30px;font-size: large;position:absolute;left: 486px;top:400px;">' + Cardcvv + '</p>';
+
+        $(".Cardnum").append(newi);
+        $(".Cardown").append(newD);
+        $(".yy").append(newa);
+        $(".mm").append(newb);
+        $(".Cardcvv").append(newc);
+
+        //$(".cardnum").append(newi);
+        //$("body").append(newD);
+        $.getJSON("./game/data.json", function (data) {
+            var i = 0;   //索引數
+            var newItem = '<p style="color: rgb(241, 66, 66);font-size: large;position:absolute;left: 50%;top:300px;">' + data[category][which].price + '</p>'
+        });
+        $(".price").append(newItem);
+    });
+</script>
+
+<body>
+    <div class="navigation"></div>
+    <!--<div class="cardnum" style="width:250px;height:150px;position:absolute;left:25%;top:200px;font-size:1;"></div>
+    -->
+    <div>
+        <div class="text" style="position: absolute;left:25%;top: 135px;">
+            <p style="font-size:xx-large;text-align: center;">
+                訂單已完成
+            </p>
+        </div>
+        <div class="Cardnum">
+            <p
+                style="border: 1px solid #000000;background-color:#9fbee7; width:150px; height:30px;font-size:larger;position: absolute;left: 25%;top: 200px;">
+                卡號</p>
+        </div>
+        <div class="Cardown" style=>
+            <p
+                style="border: 1px solid #000000;background-color:#9fbee7; width:150px; height:30px;font-size:larger;position: absolute;left: 25%;top: 250px;">
+                持卡人</p>
+        </div>
+        <!-- <div class="price">
+                <p style="font-size:larger;position: absolute;left: 25%;top: 300px;">價格</p>
+            </div> -->
+        <div class="yy">
+            <p
+                style="border: 1px solid #000000;background-color:#9fbee7; width:150px; height:30px;font-size:larger;position: absolute;left: 25%;top: 300px;">
+                有效年分</p>
+        </div>
+        <div class="mm">
+            <p
+                style="border: 1px solid #000000;background-color:#9fbee7; width:150px; height:30px;font-size:larger;position: absolute;left: 25%;top: 350px;">
+                有效月分</p>
+        </div>
+        <div class="Cardcvv">
+            <p
+                style="border: 1px solid #000000;background-color:#9fbee7; width:150px; height:30px;font-size:larger;position: absolute;left: 25%;top: 400px;">
+                安全碼</p>
+        </div>
+        <div class="thank" style="width:1366px; height: 119px;position: absolute;top: 500px;">
+            <p style="font-size:xx-large;text-align: center;">
+                感謝您的購買~~
+            </p>
+        </div>
+    </div>
+   
+</body>
+
+</html>

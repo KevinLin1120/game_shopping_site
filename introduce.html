@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+<script>
+   $().ready(function(){
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+
+        const category = urlParams.get("category"); //Get url query category
+        const which = urlParams.get("which"); //Get url query category
+
+        // Include navigation bar
+        $(".navigation").load("./nav.html");
+
+    $.getJSON("./game/data.json", function(data) {
+        
+        var i = 0;   //索引數
+        var newItem = '<img src="./game/img/'+ data[category][which].img +'" style="width:500px;height:300px;position:absolute;left:183px;top:120px;"/>'+
+         '<img src="./game/img/'+ data[category][which].pic1 +'" style="width:250px;height:150px;position:absolute;left:183px;top:420px;"/>'+
+         '<img src="./game/img/'+ data[category][which].pic2 +'" style="width:250px;height:150px;position:absolute;left:433px;top:420px;"/>'+
+         '<img src="./game/img/'+ data[category][which].pic3 +'" style="width:250px;height:150px;position:absolute;left:683px;top:420px;"/>'+
+         '<img src="./game/img/'+ data[category][which].pic4 +'" style="width:250px;height:150px;position:absolute;left:933px;top:420px;"/>'+
+         '<div class="class" style="width:500px;height:300px;position:absolute;left:683px;top:120px;background-color:rgb(0, 204, 255) ;">'+data[category][which].description+'</div>'+
+         '<p style="color: rgb(241, 66, 66);font-size: large;position:absolute;left: 278px;top:580px;">'+data[category][which].name +'</p>'+
+         '<p style="color: rgb(241, 66, 66);font-size: large;position:absolute;left: 500px;top:580px;">'+data[category][which].price+'</p>'
+        // var newItem = '<img src="./game/img/'+ game.img + '" style="width:500px;height:300px;position:absolute;left:185px;top:140px;">';
+       
+        
+        
+        $(".kevin").append(newItem);
+        
+        // function run() {
+        //     if (i >= data.length) {    //循環判斷
+        //         i = 0;
+        //     }
+        //     $("#img").attr("src", data[i]);  //插入JSON連結內容
+        //     i++;
+        // }
+        // setInterval(run, 3000);   //每3秒定時呼叫
+        // run();  //先執行一次，開頭才不會沒內容
+    });
+   }); 
+</script>
+<body>
+    <div class="navigation"></div>
+    
+
+<!--<div class="class" style="width:500px;height:300px;position:absolute;left:685px;top:140px;background-color: blue;"></div>-->
+   <!--<div>
+        <img src="images/pokemon.jpg" style="width:500px;height:300px;position:absolute;left:185px;top:140px;"/>
+        <img src="images/pokemon.word.jpg" style="width:500px;height:300px;position:absolute;left:685px;top:140px;"/>
+        <img src="images/pokemon1.jpg" style="width:250px;height:150px;position:absolute;left:185px;top:440px;"/>
+        <img src="images/pokemon2.jpg" style="width:250px;height:150px;position:absolute;left:435px;top:440px;"/>
+        <img src="images/pokemon3.jpg" style="width:250px;height:150px;position:absolute;left:685px;top:440px;"/>
+        <img src="images/pokemon4.jpg" style="width:250px;height:150px;position:absolute;left:935px;top:440px;"/>
+        <img src="images/cart.jpg" style="width:100px;height:30px;position:absolute;left:935px;top:595px;"/>
+       
+    <p style="color: rgb(241, 66, 66);font-size: large;position:absolute;left: 185px;top:600px;">《寶可夢傳說 阿爾宙斯》$1390</p>
+    <a href="file:///C:/Users/Acer/Desktop/WEB/pay.html"><img src="images/cart.jpg" style="width:100px;height:30px;position:absolute;left:935px;top:595px;"></a>
+    <a href="file:///C:/Users/Acer/Desktop/WEB/pay.html"><img src="images/buy.jpg" style="width:100px;height:30px;position:absolute;left:1086px;top:595px;"></a>
+</div>--->
+<div class="kevin"></div>
+<div id="content">
+    <p style="color: rgb(241, 66, 66);font-size: large;position:absolute;left: 480px;top:580px;">$</p>
+    <a href="./pay.html"><img src="./game/img/tool/cart.jpg" style="width:100px;height:30px;position:absolute;left:933px;top:575px;"></a>
+    <a href="./pay.html"><img src="./game/img/tool/buy.jpg" style="width:100px;height:30px;position:absolute;left:1083px;top:575px;"></a>
+
+</div>
+
+</body>
+</html>

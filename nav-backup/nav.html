@@ -1,0 +1,68 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<style>
+    #nav{
+        background-color: #E42B2B;
+        height: 119px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    #top > ul{
+        padding-right: 10px;
+        float: right;
+    }
+    #top > ul > li, #top > ul > li > a{
+        list-style: none;
+        display: inline-block;
+        margin: 6px;
+        color: floralwhite;
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+    }
+    #bottom{
+        margin-left: 30px;
+        display: flex;
+    }
+    #title > a{
+        /* font-family */
+        font-size: 49px;
+        font-weight: bold;
+        color: papayawhip;
+    }
+    #search-bar{
+        font-size: 20px;
+        width: 750px;
+        height: 30px;
+        margin: 15px auto ;
+    }
+    
+</style>
+<script>
+    $("#title")
+        .mouseenter(function(){
+            $(this).css("text-shadow", "0 0 5px #555");
+        })
+        .mouseleave(function(){
+            $(this).css("text-shadow", "");
+        });
+</script>
+
+<div id="nav">
+    <div id="top">
+        <ul>
+            <li><a href="">公告</a></li>
+            <li>|</li>
+            <li><a href="">購物車</a></li>
+            <li>|</li>
+            <li><a href="">線上小幫手</a></li>
+            <li>|</li>
+            <li><a href="">購物金</a></li>
+        </ul>
+    </div>
+    <div id="bottom">
+        <label id="title"><a href="index.html">Just Play</a></label>
+        <input type="text" id="search-bar" placeholder="搜尋遊戲">
+    </div>
+</div>

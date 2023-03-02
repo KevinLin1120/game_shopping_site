@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Play</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    *{
+        margin: 0px;
+    }
+    .indexBack{
+        background-color: lightgray;
+        height: 600px;
+        width:80%; 
+        border-radius:20px;
+        overflow: flex;
+        margin: 30px auto;
+    }
+    .annh1{
+        text-align: center;
+    }
+</style>
+
+<style type="text/css">
+    .talk_con{
+        width:600px;
+        height:500px;
+        border:1px solid #666;
+        margin:50px auto 0;
+        background:#f9f9f9;
+    }
+    .talk_show{
+        width:580px;
+        height:420px;
+        border:1px solid #666;
+        background:#fff;
+        margin:10px auto 0;
+        overflow:auto;
+    }
+    .talk_input{
+        width:580px;
+        margin:10px auto 0;
+    }
+    .talk_word{
+        width:500px;
+        height:26px;
+        padding:0px;
+        float:left;
+        margin-left:10px;
+        outline:none;
+        text-indent:10px;
+    }        
+    .talk_sub1{
+        width:36%;
+        height:30px;
+        float:left;
+        margin-left:10px;
+    }
+           
+    .talk_sub2{
+        width:25%;
+        height:30px;
+        float:left;
+        margin-left:10px;
+    }
+
+    .talk_sub3{
+        width:30%;
+        height:30px;
+        float:left;
+        margin-left:10px;
+    }
+    .atalk{
+        margin:10px; 
+    }
+    .atalk span{
+        display:inline-block;
+        background:#0181cc;
+        border-radius:10px;
+        color:#fff;
+        padding:5px 10px;
+    }
+    .btalk{
+        margin:10px;
+        text-align:right;
+    }
+    .btalk span{
+        display:inline-block;
+        background:#ef8201;
+        border-radius:10px;
+        color:#fff;
+        padding:5px 10px;
+    }
+</style>
+
+<script>
+    $(document).ready(function(){
+        $(".navigation").load("./nav.html");
+    });
+
+</script>
+
+<script type="text/javascript">      
+        window.onload = function(){
+            var Words = document.getElementById("words");
+            var TalkWords = document.getElementById("talkwords");
+            var TalkSub1 = document.getElementById("talksub1");
+            var TalkSub2 = document.getElementById("talksub2");
+            var TalkSub3 = document.getElementById("talksub3");
+
+
+            TalkSub1.onclick = function(){
+                var str = "";
+                /*if(TalkWords.value == ""){
+                     // 訊息為空時彈窗
+                    alert("訊息不能為空");
+                    return;
+                }*/
+                    str = '<div class="btalk"><span>顧客問說 :' + "1" +'</span></div>' ;  
+                    str = '<div class="atalk"><span>小幫手說 :' + "以下有幾個可能原因導致您在結帳頁面時無法成功下單："+
+                        "<br>"+"所選支付方式支付失敗"+
+                        "<br>"+"訂單中商品的寄送方式不同（當購買多件商品時）" +
+                        "<br>"+" 超過商品購買數量限制（當購買多件商品時）"+'</span></div>';
+                Words.innerHTML = Words.innerHTML + str;
+            }
+
+            TalkSub2.onclick = function(){
+                var str = "";
+                /*if(TalkWords.value == ""){
+                     // 訊息為空時彈窗
+                    alert("訊息不能為空");
+                    return;
+                }*/
+                    str = '<div class="btalk"><span>顧客問說 :' + "2" +'</span></div>' ;  
+                    str = '<div class="atalk"><span>小幫手說 :' + "我們支援以下幾種寄送方式："+
+                        "<br>"+"店到店配送服務  （、7-11、全家、OK超商與萊爾富）"+
+                        "<br>"+"中華郵政 " +
+                        "<br>"+" 宅配服務（黑貓宅急便）"+'</span></div>';
+                Words.innerHTML = Words.innerHTML + str;
+            }
+
+            TalkSub3.onclick = function(){
+                var str = "";
+                /*if(TalkWords.value == ""){
+                     // 訊息為空時彈窗
+                    alert("訊息不能為空");
+                    return;
+                }*/
+                    str = '<div class="btalk"><span>顧客問說 :' + "3" +'</span></div>' ;  
+                    str = '<div class="atalk"><span>小幫手說 :' + "為提供更好的退貨退款體驗，賣家（包含商城／優選／一般／海外）"+
+                        "將全面適用【安心退】服務，讓賣家更輕鬆處理退貨退款訂單，也提升買家回購率及忠誠度。" +
+                        "<br>"+"【安心退】依照賣場類型分階段上線"+
+                        "<br>"+"一般賣家將於2022年3月15日至31日間陸續上線" +
+                        "<br>"+"* 上線日期後所申請的退貨退款訂單皆會適用"+'</span></div>';
+                Words.innerHTML = Words.innerHTML + str;
+            }
+
+        }
+
+
+    </script>
+
+<body>
+    <div class="navigation"></div>
+
+    <div class="indexBack">
+        <h1 class="annh1">線上小幫手</h1>
+        <div class="talk_show" id="words">
+            
+        </div>
+        <div class="talk_input">
+            <!-- <input type="text" class="talk_word" id="talkwords"> -->
+            <input type="button" value="為什麼在結帳頁面不能成功下單?" class="talk_sub1" id="talksub1">
+            <input type="button" value="支援哪些寄送方式" class="talk_sub2" id="talksub2">
+            <input type="button" value="退貨退款懶人包" class="talk_sub3" id="talksub3">
+        </div>
+    </div>
+
+</body>
+</html>
