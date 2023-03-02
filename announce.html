@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Play</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    *{
+        margin: 0px;
+    }
+    .announce{
+        display: flex;
+        /* 水平置中 */
+        justify-content: center; 
+        height: 100px;
+        /*background-color: lightgray;
+        height: 550px;
+        width:80%; 
+        border-radius:20px;
+        overflow: flex;*/
+        margin: 30px auto;
+    }
+    .tablelist{
+        /*background-color: gray;*/
+        width:90%;
+        border: 10px black;
+    }
+    .tablelist h1{
+        background-color: lightgray;
+        border: 10px black;
+    }
+
+    tbody tr{
+        height: 100px;
+    }
+    
+    #index1{
+        text-align: center;
+    }
+    #index2{
+        text-align: center;
+    }
+    #index3{
+        text-align: center;
+    }
+    #index4{
+        text-align: center;
+    }
+    #index5{
+        text-align: center;
+    }
+    
+    #btn1{
+        /*background-color:lightgray ;*/
+        border: none;
+    }
+    #btn1:hover{
+        color:black;
+        background-color: gray;
+    }
+
+    #btn2{
+        /*background-color:lightgray ;*/
+        border: none;
+    }
+    #btn2:hover{
+        color:black;
+        background-color: gray;
+    }
+    #btn3{
+        /*background-color:lightgray ;*/
+        border: none;
+    }
+    #btn3:hover{
+        color:black;
+        background-color: gray;
+    }
+
+    #btn4{
+        /*background-color:lightgray ;*/
+        border: none;
+    }
+    #btn4:hover{
+        color:black;
+        background-color: gray;
+    }
+    #btn5{
+        /*background-color:lightgray ;*/
+        border: none;
+    }
+    #btn5:hover{
+        color:black;
+        background-color: gray;
+    }
+    #out {
+        position: absolute;
+        border: 1px solid white;
+        padding: 10px;
+        background-color: blanchedalmond;
+        /**/display: none;
+        border-radius: 8px;
+        box-shadow: 10px 10px 20px rgb(0, 0, 0,0.5);
+        width: 360px;
+        padding-top: 30px;            
+    }
+    #close {
+        /* width: 360px; */
+        padding: 2px;
+        border: 1px solid gray;
+        margin: 4px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+</style>
+
+<script>
+    $(document).ready(function(){
+        $(".navigation").load("./nav.html");
+
+        
+        var $new_item1 =$(
+            ' <div id="hello1"> <h1>2022年 端午連假休息公告<h1>'+
+                '<h2>連假三天6/3 (五)~6/5(日)客服 / 出貨都休息唷</h2>'+
+                '<h3>發布日期: 2022-05-27</h3>'+
+            '</div>'
+        );
+        var $new_item2 =$(
+                ' <div id="hello1"> <h1>2022年 51連假 出貨、休息公告<h1>'+
+                    '<h2>4/30(六)~ 5/2 (一) 暫停出貨跟客服服務！</h2>'+
+                    '<h3>發布日期: 2022-04-28</h3>'+
+                '</div>'
+            );
+        var $new_item3 =$(
+            ' <div id="hello1"> <h1>2022年 清明連假休息公告</h1>'+
+                '<h2>4/2~4/5將暫停出貨與客服服務</h2>'+
+                '<h3>發布日期: 2022-04-01</h3>'+
+            '</div>');
+        var $new_item4 =$(
+            ' <div id="hello1"> <h1>2022年 228連假休息公告<h1>'+
+                '<h2>2/28(一)將暫停出貨與客服唷</h2>'+
+                '<h3>發布日期: 2022-02-24</h3>'+
+            '</div>');
+        var $new_item5 =$(
+            ' <div id="hello1"> <h1>2022年 春節連假 出貨、休息公告<h1>'+
+                '<h2>新年快樂 2022</h2>'+
+                '<h3>發布日期: 2022-12-30</h3>'+
+            '</div>');
+
+        
+        $('#btn1').click(function(){
+            
+            $('#out').append($new_item1);
+            $('#out').show();
+            $('#close').click(function(){
+                $('#out').hide();
+                $('#hello1').remove();
+            });
+        });
+
+        $('#btn2').click(function(){
+            
+            $('#out').append($new_item2);
+            $('#out').show();
+            $('#close').click(function(){
+                $('#out').hide();
+                $('#hello2').remove();
+            });
+        });
+
+        
+        $('#btn3').click(function(){
+            $('#out').append($new_item3);
+            $('#out').show();
+            $('#close').click(function(){
+                $('#out').hide();
+                $('#hello3').remove();
+            });
+        });
+
+        $('#btn4').click(function(){
+            $('#out').append($new_item4);
+            $('#out').show();
+            $('#close').click(function(){
+                $('#out').hide();
+                $('#hello4').remove();
+            });
+        });
+
+        $('#btn5').click(function(){
+            $('#out').append($new_item3);
+            $('#out').show();
+            $('#close').click(function(){
+                $('#out').hide();
+                $('#hello5').remove();
+            });
+        });
+       
+    });
+
+
+</script>
+
+<body>
+    <div class="navigation"></div>
+
+        <div class="announce">
+
+            <table class="tablelist">
+                
+                <thead>
+                    <th><h1>公告欄</h1></th>
+                    <th width="20%"><h1> 發布日期  </h1></th>
+                </thead>
+                <tbody>
+
+                    <tr >
+                        <td data-title="標題：">
+                            <span> 
+                                <div id="index1"><button id="btn1" align="center">
+                                    <h2>2022年 端午連假休息公告</h2>
+                                    <!-- <h3>連假三天6/3 (五)~6/5(日)客服 / 出貨都休息唷</h3> -->
+                                </button></div>
+                            </span>
+                        </td>
+                        <td data-title="發布日期：">
+                            <span><h3>2022-05-27</h3></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-title="標題：">
+                            <span> 
+                                <div id="index2"><button id="btn2" align="center">
+                                    <h2>2022年 51連假 出貨、休息公告</h2></button>
+                                </div>
+                            </span>
+                        </td>
+                        <td data-title="發布日期：">
+                            <span>2022-04-28</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-title="標題：">
+                            <span> 
+                                <div id="index3"><button id="btn3" align="center">
+                                    <h2>2022年 清明連假休息公告</h2>
+                                </button></div>
+                            </span>
+                        </td>
+                        <td data-title="發布日期：">
+                            <span>2022-04-01</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-title="標題：">
+                            <span> 
+                                <div id="index4"><button id="btn4" align="center">
+                                    <h2>2022年 228連假休息公告</h2>
+                                </button>
+                                </div>
+                            </span>
+                        </td>
+                        <td data-title="發布日期：">
+                            <span>2022-02-24</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-title="標題：">
+                            <span> 
+                                <div id="index5">
+                                    <button id="btn5" align="center"><h2>2022年 元旦休息公告</h2></button>
+                                </div>
+                            </span>
+                        </td>
+                        <td data-title="發布日期：">
+                            <span>2021-12-30</span>
+                        </td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+
+            <div id="out" >
+                <div id = "close">X</div>
+				<!-- <p><h1></h1></p>
+				<p><h2></h2></p> -->
+			</div>
+
+        </div>
+    </div>
+</body>
+</html>

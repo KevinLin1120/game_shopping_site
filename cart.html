@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/cart.css" />
+</head>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+    $().ready(function(){
+        // Include navigation bar
+        $(".navigation").load("./nav.html");
+    });
+</script>
+
+<body>
+    <div class="navigation"></div>
+<!-- 頂部購物車 -->
+    <div class="body">
+        <div class="shop">
+            <i>
+            </i>
+            <span>購物車</span>
+        </div>
+
+<!-- 商品區塊 -->
+        <div class="product">
+            <div class="product-box">
+                <div class="product-ckb">
+                    <em class="product-em product-xz">
+
+                    </em>
+                </div>
+<!--------------------------------------------------------------------------------------------->
+                <div class="product-sx">
+                    <a href="###">
+                        <img src="./game/img/action/naruto.jpg" class="product-img" />
+                        <span class="product-name">火影忍者終極風暴</span>
+                    </a>
+                    <span class="product-price">
+                        NT.&thinsp;
+                        <span class="price">890</span>
+                    </span>
+                    <div class="product-amount">
+                        <div class="product_gw">
+                            <em class="product-reduce">-</em>
+                            <input type="text" value="1" class="product-num" />
+                            <em class="product-add">+</em>
+                        </div>
+                    </div>
+                    <div class="product-del">
+                        <img src="./game/img/tool/bin.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-ckb">
+                    <em class="product-em">
+
+                    </em>
+                </div>
+<!--------------------------------------------------------------------------------------------->
+                <div class="product-sx">
+                    <a href="###">
+                        <img src="./game/img/racing/marioracing.jpg" class="product-img" />
+                        <span class="product-name">馬力歐賽車</span>
+                    </a>
+                    <span class="product-price">
+                        NT.&thinsp;
+                        <span class="price">990</span>
+                    </span>
+                    <div class="product-amount">
+                        <div class="product_gw">
+                            <em class="product-reduce">-</em>
+                            <input type="text" value="1" class="product-num" />
+                            <em class="product-add">+</em>
+                        </div>
+                    </div>
+                    <div class="product-del">
+                        <img src="./game/img/tool/bin.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-ckb">
+                    <em class="product-em">
+
+                    </em>
+                </div>
+<!--------------------------------------------------------------------------------------------->                
+                <div class="product-sx">
+                    <a href="###">
+                        <img src="./game/img/adventure/shining_pearl.png" class="product-img" />
+                        <span class="product-name">寶可夢 明亮珍珠</span>
+                    </a><span class="product-price">
+                        NT.&thinsp;
+                        <span class="price">1080</span>
+                    </span>
+                    <div class="product-amount">
+                        <div class="product_gw"><em class="product-reduce">-</em>
+                            <input type="text" value="1" class="product-num" />
+                            <em class="product-add">+</em>
+                        </div>
+                    </div>
+                    <div class="product-del">
+                        <img src="./game/img/tool/bin.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-ckb">
+                    <em class="product-em">
+
+                    </em>
+                </div>
+<!--------------------------------------------------------------------------------------------->
+                <div class="product-sx">
+                    <a href="###">
+                        <img src="./game/img/sports/sport.jpg" class="product-img" />
+                        <span class="product-name">Nintendo Switch運動</span>
+                    </a><span class="product-price">
+                        NT.&thinsp;
+                        <span class="price">1490</span>
+                    </span>
+                    <div class="product-amount">
+                        <div class="product_gw">
+                            <em class="product-reduce">-</em>
+                            <input type="text" value="1" class="product-num" />
+                            <em class="product-add">+</em>
+                        </div>
+                    </div>
+                    <div class="product-del">
+                        <img src="./game/img/tool/bin.png" />
+                    </div>
+                </div>
+            </div>                    
+            
+            <div class="cash-box">
+                <div class="cash-ckb">
+                    <span>使用購物金</span>
+                    <input id="cash-cbx" type="checkbox">
+                    <div class="cash-num"> <span>50</span> </div>  <!-- 購物金 -->
+                </div>
+
+        </div>
+
+ <!-- 底部結帳區塊 -->
+        <div class="product-js">
+            <div class="product-al">
+                <div class="product-all">
+                    <em class="">
+
+                    </em>
+                </div>
+                <div class="all-xz">
+                    <span class="product-all-qx">全選</span>
+                    <div class="all-sl" style="display: none;">
+                        (<span class="product-all-sl">0</span>)
+                    </div>
+                </div>
+            </div>
+            <a href="./pay.html" class="product-sett product-sett-a">結帳</a>        <!-- 付款網址 -->
+            <div class="all-product">
+                <span class="all-product-a">
+                    NT&thinsp;
+                    <span class="all-price">0</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
