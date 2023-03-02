@@ -1,0 +1,315 @@
+{
+    "Action":[
+        {
+            "name": "超級瑪利歐3D世界 : 狂怒世界",
+            "img": "/action/super_mario.png",
+            "price": "$1390",
+            "description": "<br><br>《超級瑪利歐 3D 世界 + 狂怒世界》（日語：スーパーマリオ 3Dワールド ＋ フューリーワールド，Super Mario 3D World + Fury World，英語：Super Mario 3D World + Bowser's Fury）是任天堂於2020年9月3日在《超級瑪利歐兄弟35周年直面會》發表[5]，宣佈於2021年2月12日在任天堂Switch平台上發售的一款遊戲。相對在Wii U平台上原來版本的3D世界，Switch版追加了網路聯機遊玩與拍照模式及另一邊的全新內容 狂怒世界(Fury World) ，遊戲支援繁簡中文。",
+            "pic1": "/action/super_mario1.png",
+            "pic2": "/action/super_mario2.jpg",
+            "pic3": "/action/super_mario3.jpg",
+            "pic4": "/action/super_mario4.jpg"
+        },
+        {
+            "name": "薩爾達傳說 織夢島",
+            "img": "/action/zelda_link_awaken.png",
+            "price": "1470",
+            "description": "<br><br>《薩爾達傳說 織夢島》是一款既叫好又叫座的遊戲作品。評論家稱讚遊戲的劇情深度和諸多特色，而不滿則集中在它的操作方式和單色畫面。1998年，任天堂發布了面向Game Boy Color的復刻作品《薩爾達傳說 織夢島DX》，由於GBC的機能提升，畫面升級為彩色，相容GB印表機（英語：Game Boy Printer），還擁有獨特的彩色迷宮設計。兩個版本在全球範圍內總計銷售超過600萬份，出現在多種遊戲雜誌的「史上最佳遊戲」榜單中。",
+            "pic1": "/action/zelda_link_awaken1.jpg",
+            "pic2": "/action/zelda_link_awaken2.jpg",
+            "pic3": "/action/zelda_link_awaken3.jpg",
+            "pic4": "/action/zelda_link_awaken4.jpg"
+        },
+        {
+            "name": "火影忍者 — 終極風暴",
+            "img": "/action/naruto.jpg",
+            "price": "1750",
+            "description": "<br><br>《火影忍者疾風傳 終極風暴4》（日版名：NARUTO －ナルト－疾風伝 ナルティメットストーム4，英文版名：Naruto Shippuden: Ultimate Ninja Storm 4）,[3] 是由CyberConnect2開發，萬代南夢宮遊戲於2016年在PlayStation 4、Xbox One與Windows發售的對戰動作遊戲，[4]作為《火影忍者疾風傳 終極風暴革命》的續篇。在PlayStation 4與Xbox One進行開發，制定了為期兩年的開發計劃。",
+            "pic1": "/action/naruto1.jpg",
+            "pic2": "/action/naruto2.jpg",
+            "pic3": "/action/naruto3.jpg",
+            "pic4": "/action/naruto4.jpg"
+        },
+        {
+            "name": "薩爾達傳說 曠野之習",
+            "img": "/action/zelda_link.jpg",
+            "price": "1590",
+            "description": "<br><br>《薩爾達傳說 曠野之息》（日語：ゼルダの伝説 ブレス オブ ザ ワイルド，英語：The Legend of Zelda: Breath of the Wild，中國大陸譯作「塞爾達傳說 曠野之息」，副標題又譯作「荒野之息」）是一款動作冒險遊戲，由任天堂企劃製作本部開發與發行，於2017年發行於任天堂Switch和Wii U主機。《薩爾達傳說 曠野之息》是薩爾達傳說系列遊戲的第十九部，設定在薩爾達時間線的末端。遊戲中，玩家操縱主角林克在世界中探索，擊敗災厄加儂，恢復被滅亡的海拉魯王國。",
+            "pic1": "/action/zelda_link1.jpg",
+            "pic2": "/action/zelda_link2.jpg",
+            "pic3": "/action/zelda_link3.jpg",
+            "pic4": "/action/zelda_link4.jpg"
+        },
+        {
+            "name": "Fire emblem 無雙 風花雪月",
+            "img": "/action/Fire.jpg",
+            "price": "1490",
+            "description": "<br><br>《聖火降魔錄無雙 風花雪月》（日版名：ファイアーエムブレム無双 風花雪月，英文版名：Fire Emblem Warriors: Three Hopes，中國大陸和香港譯作「火焰之紋章無雙 風花雪月」，官方譯為「Fire Emblem無雙 風花雪月」）是一款由Omega Force和Team Ninja共同開發，並由光榮特庫摩遊戲發行的砍殺遊戲。",
+            "pic1": "/action/Fire1.jpg",
+            "pic2": "/action/Fire2.jpg",
+            "pic3": "/action/Fire3.jpg",
+            "pic4": "/action/Fire4.jpg"
+        }
+       
+    ],
+    "Adventure":[
+        {
+            "name": "星之卡比 探索發現",
+            "img": "/adventure/star.jpg",
+            "price": "1490",
+            "description": "<br><br>《星之卡比 探索發現》（日版名：星のカービィ ディスカバリー，英文版名：Kirby and the Forgotten Land）是由HAL研究所開發、任天堂發行的平台動作遊戲[1]。本作是星之卡比主要系列中首款全3D遊戲，也是系列30周年的紀念作品。本作在2022年3月25日發行於任天堂Switch平台。",
+            "pic1": "/adventure/star1.jpg",
+            "pic2": "/adventure/star2.jpg",
+            "pic3": "/adventure/star3.jpg",
+            "pic4": "/adventure/star4.jpg"
+        },
+        {
+            "name": "寶可夢 明亮珍珠",
+            "img": "/adventure/shining_pearl.png",
+            "price": "1590",
+            "description": "<br><br>《寶可夢 晶燦鑽石／明亮珍珠》（日語：ポケットモンスター ブリリアントダイヤモンド・シャイニングパール）是由ILCA開發，寶可夢公司發行，並在任天堂Switch平台上發售的角色扮演遊戲。本作是《寶可夢 鑽石／珍珠》的重製版，於2021年11月19日發售。",
+            "pic1": "/adventure/shining_pearl1.jpg",
+            "pic2": "/adventure/shining_pearl2.jpg",
+            "pic3": "/adventure/shining_pearl3.jpg",
+            "pic4": "/adventure/shining_pearl4.jpg"
+        },
+        {
+            "name": "寶可夢 晶燦鑽石",
+            "img": "/adventure/brilliant_diamond.png",
+            "price": "1550",
+            "description": "<br><br>《寶可夢 晶燦鑽石／明亮珍珠》（日語：ポケットモンスター ブリリアントダイヤモンド・シャイニングパール）是由ILCA開發，寶可夢公司發行，並在任天堂Switch平台上發售的角色扮演遊戲。本作是《寶可夢 鑽石／珍珠》的重製版，於2021年11月19日發售。",
+            "pic1": "/adventure/brilliant_diamond1.jpg",
+            "pic2": "/adventure/brilliant_diamond2.jpg",
+            "pic3": "/adventure/brilliant_diamond3.jpg",
+            "pic4": "/adventure/brilliant_diamond4.jpg"
+        },
+        {
+            "name": "小小夢魘",
+            "img": "/adventure/little.jpg",
+            "price": "790",
+            "description": "<br><br>《小小夢魘》（英語：Little Nightmares）是一款由Tarsier Studios開發並由萬代南夢宮娛樂發行的解謎平台恐怖冒險遊戲，於2017年4月28日上市，當時可在Microsoft Windows、PlayStation 4和Xbox One上進行遊玩。2018年5月18日，此遊戲登陸任天堂Switch平台。此遊戲因其氣氛、畫質和音效獲得了許多正面評語，但也被批評遊戲保存系統的不佳和較短的遊玩長度。",
+            "pic1": "/adventure/little1.jpg",
+            "pic2": "/adventure/little2.jpg",
+            "pic3": "/adventure/little3.jpg",
+            "pic4": "/adventure/little4.jpg"
+        },
+        {
+            "name": "魔物獵人 崛起",
+            "img": "/adventure/hunter.jpg",
+            "price": "1390",
+            "description": "<br><br>《魔物獵人 崛起》（日語：モンスターハンターライズ，英語：Monster Hunter Rise，中國大陸譯作「怪物獵人 崛起」）是一款由卡普空開發並發行在任天堂Switch上的動作角色扮演遊戲。本作是繼《魔物獵人XX》後再度登陸任天堂Switch上的魔物獵人系列作品，遊戲於2021年3月26日在全球同步發售[3]。配合遊戲同步上市的還包括三款Amiibo，分別是隨從貓「艾路」、獵犬「加爾克」，以及新登場的封面魔物「怨虎龍」。可透過Amiibo為遊戲中的玩家解鎖一套對應的特別外觀裝備[4]。",
+            "pic1": "/adventure/hunter1.jpg",
+            "pic2": "/adventure/hunter2.jpg",
+            "pic3": "/adventure/hunter3.jpg",
+            "pic4": "/adventure/hunter4.jpg"
+        }
+    ],
+    "Fir_Per":[
+        {
+            "name": "德軍總部2 新巨象",
+            "img": "/Fir_Per/wolf.jpg",
+            "price": "1590",
+            "description": "<br><br>《德軍總部II：新巨像》（英語：Wolfenstein II: The New Colossus）是一款由MachineGames開發，貝塞斯達軟體發行的第一人稱射擊動作冒險遊戲，於2017年10月27日發行於Microsoft Windows、PlayStation 4和Xbox One平台，2018年6月29日登陸任天堂Switch。 遊戲是德軍總部系列的第八部主系列作品，也是2014年《德軍總部：新秩序》的續作。故事為虛構歷史，設定於軸心國在第二次世界大戰中的勝利後的1961年。玩家繼續跟隨老兵威廉·「B.J」·布拉柯威茲，與美國的納粹政權作鬥爭。",
+            "pic1": "/Fir_Per/wolf1.jpg",
+            "pic2": "/Fir_Per/wolf2.jpg",
+            "pic3": "/Fir_Per/wolf3.jpg",
+            "pic4": "/Fir_Per/wolf4.jpg"
+        },
+        {
+            "name": "Apex",
+            "img": "/Fir_Per/apex.jpg",
+            "price": "1390",
+            "description": "<br><br>Apex Legends是一款由Respawn Entertainment開發並由Electronic Arts發行的免費 大逃殺英雄射擊遊戲。它於2019 年 2 月在Microsoft Windows、 PlayStation 4和Xbox One上發布，在 2021 年 3 月在Nintendo Switch上發布，在 2022 年 3 月在PlayStation 5和Xbox Series X/S上發布。這款遊戲的移動版專為觸摸屏設計，名為Apex Legends Mobile也已宣布，於 2022 年 5 月 17 日在Android和iOS上發布. 遊戲支持跨平台遊玩，不包括上述移動平台。",
+            "pic1": "/Fir_Per/apex1.jpg",
+            "pic2": "/Fir_Per/apex2.jpg",
+            "pic3": "/Fir_Per/apex3.jpg",
+            "pic4": "/Fir_Per/apex4.jpg"
+        },
+        {
+            "name": "方舟：生存進化",
+            "img": "/Fir_Per/ark.jpg",
+            "price": "1790",
+            "description": "<br><br>《方舟：生存進化》（英語：Ark: Survival Evolved）是一款由Studio Wildcard製作與發行的生存類沙盒動作冒險遊戲，使用虛幻4引擎打造，於2017年8月29日在Linux、Microsoft Windows、OS X、PlayStation 4和Xbox One平台發行，並於2018年6月14日在iOS和Android平台發行；開發者也計劃任天堂Switch平台發行。遊戲舞台設定在一座充滿恐龍的神秘島嶼「方舟」，玩家必須運用技巧與智慧在危機四伏的世界中生存[4",
+            "pic1": "/Fir_Per/ark1.jpg",
+            "pic2": "/Fir_Per/ark2.jpg",
+            "pic3": "/Fir_Per/ark3.jpg",
+            "pic4": "/Fir_Per/ark4.jpg"
+        },
+        {
+            "name": "多重花園",
+            "img": "/Fir_Per/garden.jpg",
+            "price": "975",
+            "description": "<br><br>《多重花園》由芝加哥年輕藝術家 William Chyr 領導其工作室跟 9 名成員共同開發。靈感來自超現實主義版畫藝術家莫里茲・柯尼利斯・埃舍爾的 “相對性”，由現實中不存在的重力和空間組成，宛如藝術品般的世界觀。遊戲以解謎為主題。讓生命在無機質的幾何學建築物下恢復到美麗的無限空間。本作在海外被媒體選為年度遊戲獎，並獲得了多項提名等，在全世界受到肯定與賞識。",
+            "pic1": "/Fir_Per/garden1.jpg",
+            "pic2": "/Fir_Per/garden2.jpg",
+            "pic3": "/Fir_Per/garden3.jpg",
+            "pic4": "/Fir_Per/garden4.jpg"
+        },
+        {
+            "name": "暗影之槍：戰爭遊戲",
+            "img": "/Fir_Per/gun.jpg",
+            "price": "1290",
+            "description": "<br><br>Switch 版本的《暗影之槍：傳奇》除了上述的畫面達到 60 FPS 外，玩家可在超過 200 個任務、4 個獨特的星球上，抵禦野蠻的外星侵略者；而原本手機版本的連線功能，也將完整保留，玩家可以合作對抗永無止盡來襲的敵人，或是捉對來場團隊 PvP 競賽。",
+            "pic1": "/Fir_Per/gun1.jpg",
+            "pic2": "/Fir_Per/gun2.jpg",
+            "pic3": "/Fir_Per/gun3.jpg",
+            "pic4": "/Fir_Per/gun4.jpg"
+        }
+    ],
+    "Music":[
+        {
+            "name": "New 寶可夢隨樂拍",
+            "img": "/music/photo.jpg",
+            "price": "1450",
+            "description": "<br><br>《New 寶可夢隨樂拍》（日語：New ポケモンスナップ，英語：New Pokémon Snap）是一款由萬代南夢宮工作室開發、任天堂發行在任天堂Switch平台的拍照動作遊戲，於2021年4月30日發售[1]。本作是以1999年發行在任天堂64的《寶可夢隨樂拍》的遊戲性為基礎全新製作的遊戲[2]，登場的寶可夢包含至《劍／盾》在內共200隻以上。[3]",
+            "pic1": "/music/photo1.jpg",
+            "pic2": "/music/photo2.jpg",
+            "pic3": "/music/photo3.jpg",
+            "pic4": "/music/photo4.jpg"
+        },
+        {
+            "name": "Music Racer",
+            "img": "/music/musicracer.jpg",
+            "price": "500",
+            "description": "<br><br>《Music Racer》是一款具有節奏感的遊戲，沿著充滿未來感的霓虹燈軌道奔跑。收集節拍，抓住節奏。賽道是根據遊戲的音樂曲目實時創建的。每次跑步的速度和情緒由所選的組合決定。音樂產生了障礙和獎勵。進入節奏並收集盡可能多的積分",
+            "pic1": "/music/musicracer1.jpg",
+            "pic2": "/music/musicracer2.jpg",
+            "pic3": "/music/musicracer3.jpg",
+            "pic4": "/music/musicracer4.jpg"
+        },
+        {
+            "name": "Zumba® Burn It Up!",
+            "img": "/music/burn.jpg",
+            "price": "790",
+            "description": "<br><br>風靡186國、廣受1500萬人以上喜愛的全球性健身課程「Zumba®」，以遊戲的形式在Nintendo Switch™上登場！包含超人氣藝人暢銷曲以及Zumba®原創曲，遊戲中共收錄了30首以上的樂曲。不論舞蹈程度高低，也不分男女老幼，為所有喜愛跳舞的粉絲們獻上這款熱情洋溢的健身運動！",
+            "pic1": "/music/burn1.jpg",
+            "pic2": "/music/burn2.jpg",
+            "pic3": "/music/burn3.jpg",
+            "pic4": "/music/burn4.jpg"
+        },
+        {
+            "name": "Taiko no Tatsujin: Rhythm Festival",
+            "img": "/music/taiko.jpg",
+            "price": "1090",
+            "description": "<br><br>《太鼓之達人 咚和喀的時空大冒險》（日語：太鼓の達人 どんとかつの時空大冒険）是太鼓之達人系列在任天堂3DS的第二作家用版遊戲。於2014年6月26日發售。本作收錄收錄超過60首歌曲。",
+            "pic1": "/music/taiko1.jpg",
+            "pic2": "/music/taiko2.jpg",
+            "pic3": "/music/taiko3.jpg",
+            "pic4": "/music/taiko4.jpg"
+        },
+        {
+            "name": "Just Dance® 2022",
+            "img": "/music/just.jpg",
+            "price": "690",
+            "description": "<br><br>超級音樂跳舞遊戲 《Just Dance 舞力全開 2022》將帶著全新世界觀和 40 首熱門新曲回歸，從排行榜金曲到經典鉅作應有盡有，包含 Ciara 的 「Level Up」 、 Imagine Dragons 的 「Believer」 和更多精彩內容！另外華語流行樂歌手蕭敬騰演唱的「王妃」在《JUST DANCE 舞力全開 2022》遊戲中登場啦。讓你體驗蕭式搖滾的魅力！",
+            "pic1": "/music/just1.jpg",
+            "pic2": "/music/just2.jpg",
+            "pic3": "/music/just3.jpg",
+            "pic4": "/music/just4.jpg"
+        }
+    ],
+    "Racing":[
+        {
+            "name": "馬力歐賽車8 豪華版",
+            "img": "/racing/marioracing.jpg",
+            "price": "1490",
+            "description": "<br><br>《瑪利歐賽車8》（日版名：マリオカート 8，英文版名：Mariokart 8，中國大陸譯作「馬力歐卡丁車8」）是一款由任天堂情報開發本部開發並由任天堂在Wii U平台上發售的競速遊戲。本遊戲為《瑪利歐賽車系列》的第8作遊戲，名稱也因此而取名為「8」，在2013年的E3電玩展上首次展出其遊戲內容，這是瑪利歐賽車系列第三作在家用主機中遊戲名稱不是用該遊戲主機來當作名稱。",
+            "pic1": "/racing/marioracing1.jpg",
+            "pic2": "/racing/marioracing2.jpg",
+            "pic3": "/racing/marioracing3.jpg",
+            "pic4": "/racing/marioracing4.jpg"
+        },
+        {
+            "name": "Disney Speedstorm",
+            "img": "/racing/disney.jpg",
+            "price": "1390",
+            "description": "<br><br>包括傑克斯派洛船長、木蘭、米老鼠、薩利、野獸等在內的令人難以置信的角色都適合併為賽車戰鬥而加速。升級每位賽車手的統計數據，充分利用他們的獨特技能，這些技能可以影響單場比賽的結果，並極大地改變您玩遊戲的方式！",
+            "pic1": "/racing/disney1.jpg",
+            "pic2": "/racing/disney2.jpg",
+            "pic3": "/racing/disney3.jpg",
+            "pic4": "/racing/disney4.jpg"
+        },
+        {
+            "name": "Super Car Driver",
+            "img": "/racing/super.jpg",
+            "price": "1350",
+            "description": "<br><br>在遊戲中，您將有機會在節日場地和其他地方開車，探索這個令人驚嘆的活動發生的整個陽光明媚的地區。開車繞著各種各樣的，要求很高的課程。探索節日場地，鄰近地區，避開障礙物並嘗試盡快達到目標！",
+            "pic1": "/racing/super1.jpg",
+            "pic2": "/racing/super2.jpg",
+            "pic3": "/racing/super3.jpg",
+            "pic4": "/racing/super4.jpg"
+        },
+        {
+            "name": "Slipstream",
+            "img": "/racing/stream.jpg",
+            "price": "790",
+            "description": "<br><br>Slipstream 是一款賽車遊戲，靈感來自 80 年代末和 90 年代初的視覺效果、音樂、遊戲和汽車。它建立在自定義遊戲引擎之上，具有真實的複古感和獨特的圖形，讓玩家能夠——從字面上——回到過去。配樂從合成器流行音樂和爵士樂融合的影響中汲取靈感，為來自世界各地的各種異國情調的比賽奠定了基調，包括城市、沙漠、森林、山脈和海灘。",
+            "pic1": "/racing/stream1.jpg",
+            "pic2": "/racing/stream2.jpg",
+            "pic3": "/racing/stream3.jpg",
+            "pic4": "/racing/stream4.jpg"
+        },
+        {
+            "name": "WRC 10 The Official Game",
+            "img": "/racing/wrc.jpg",
+            "price": "1490",
+            "description": "<br><br>WRC 10，也稱為WRC 10 FIA世界拉力錦標賽，是由法國開發商Kylotonn開發、 Nacon發行的賽車電子遊戲。它是WRC 9的續集，是2021 年世界拉力錦標賽的正式比賽。該遊戲於2021 年 9 月為Microsoft Windows、 PlayStation 4、 PlayStation 5、 Xbox One和Xbox Series X/S發布，2022 年 3 月發布了Nintendo Switch版本",
+            "pic1": "/racing/wrc1.jpg",
+            "pic2": "/racing/wrc2.jpg",
+            "pic3": "/racing/wrc3.jpg",
+            "pic4": "/racing/wrc4.jpg"
+        }
+    ],
+    "Sports":[
+        {
+            "name": "Nintendo Switch 運動",
+            "img": "/sports/sport.jpg",
+            "price": "1390",
+            "description": "<br><br>《Nintendo Switch 運動》在2022年2月10日發布的任天堂直面會中發表。本作與《Wii運動》不同的是，以任天堂Switch的Joy-Con代替Wii遙控器操作的運動遊戲。本作可連線對戰。背景設定在一個名為「Spocco Square」虛構的綜合運動設施中，遊戲早期推出網球、保齡球、排球、羽毛球、足球和擊劍6種項目，其中排球、羽毛球及足球是本系列的新增3款項目。此外，並計畫於秋季以免費更新的形式推出高爾夫[2]。",
+            "pic1": "/sports/sport1.jpg",
+            "pic2": "/sports/sport2.jpg",
+            "pic3": "/sports/sport3.jpg",
+            "pic4": "/sports/sport4.jpg"
+        },
+        {
+            "name": "MLB The Show 22",
+            "img": "/sports/mlb.jpg",
+            "price": "1990",
+            "description": "<br><br>MLB The Show 22是San Diego Studio 出品的棒球 視頻遊戲，由Sony Interactive Entertainment 發行，基於美國職業棒球大聯盟(MLB)。它是為PlayStation 4 PlayStation 5、 Xbox One和Xbox Series X/S以及Nintendo Switch發布的，這是該系列的首創。[1] MLB：The Show系列的第 17 部作品，於 2022 年 4 月 5 日發布。 [1]洛杉磯天使隊的雙向球員Shhei Ohtani被選為封面明星。",
+            "pic1": "/sports/mlb1.jpg",
+            "pic2": "/sports/mlb2.jpg",
+            "pic3": "/sports/mlb3.jpg",
+            "pic4": "/sports/mlb4.jpg"
+        },
+        {
+            "name": "NBA 2K22",
+            "img": "/sports/nba.jpg",
+            "price": "1290",
+            "description": "<br><br>《NBA 2K22》是由Visual Concepts開發、2K Sports發行的一款以NBA聯賽為藍本的籃球模擬遊戲。本作是NBA 2K系列的第23部作品，也是《NBA 2K21》的後續作品。遊戲於2021年9月10日登陸Microsoft Windows、任天堂Switch、PlayStation 4、Xbox One、PlayStation 5和Xbox Series X/S。",
+            "pic1": "/sports/nba1.jpg",
+            "pic2": "/sports/nba2.jpg",
+            "pic3": "/sports/nba3.jpg",
+            "pic4": "/sports/nba4.jpg"
+        },
+        {
+            "name": "健身環大冒險",
+            "img": "/sports/gg.jpg",
+            "price": "1860",
+            "description": "<br><br>《健身環大冒險》（日語：リングフィット アドベンチャー，英語：Ring Fit Adventure）是一款由任天堂企劃製作本部開發並由任天堂發行在任天堂Switch上的健身遊戲。遊戲最大的特點是伴隨推出的配件「健身環」（Ring-Con）；健身環直徑約30公分，以聚酯纖維和尼龍製成，具有彈性。環內有擠壓感測器以感測玩家的動作，玩家需要將任天堂Switch的控制器Joy-Con拆下並分別安裝到Ring-Con和腿部固定帶上，並通過玩家自身的運動在遊戲中打敗怪獸。",
+            "pic1": "/sports/gg1.jpg",
+            "pic2": "/sports/gg2.jpg",
+            "pic3": "/sports/gg3.jpg",
+            "pic4": "/sports/gg4.jpg"
+        },
+        {
+            "name": "瑪利歐高爾夫 超級衝衝衝",
+            "img": "/sports/golf.jpg",
+            "price": "1450",
+            "description": "<br><br>《瑪利歐高爾夫 超級衝衝衝》（日語：マリオゴルフ スーパーラッシュ，英語：Mario Golf: Super Rush）是一款由Camelot開發、任天堂發行在任天堂Switch的體育遊戲，於2021年6月25日全球同步發售，遊戲支援中文。 本作於2021年2月18日播出的「任天堂直面會」上首度發表。本作是2014年發行於任天堂3DS《瑪利歐高爾夫 世界巡迴賽》睽違7年的瑪利歐高爾夫系列最新作，除按鍵操作外還可藉由Joy-Con進行體感操作，並可透過鄰近主機或網路通訊達到最多4人一同遊玩。",
+            "pic1": "/sports/golf1.jpg",
+            "pic2": "/sports/golf2.jpg",
+            "pic3": "/sports/golf3.jpg",
+            "pic4": "/sports/golf4.jpg"
+        }
+    ]
+}
